@@ -26,19 +26,20 @@ class Pokemon extends Component {
     if (!this.state.search) {
       alert("please enter a character");
       window.location.reload();
+    }  
       this.setState({
         search: ""
-      });
-    };
+      })
   };
 
   starWarCharacterSearch = starWarSearched => {
     API.starWarCharacterSearch(starWarSearched)
       .then(response => this.setState({ results: response.data.result[0].properties}))
       .catch(err  => console.log(err));
-     
+      }
 
-
+      componentDidMount() {
+        this.starWarCharacterSearch("Han Solo")
       }
 
   

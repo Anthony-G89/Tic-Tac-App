@@ -11,11 +11,10 @@ function searchForm(props) {
                 <input
                     value={props.value}
                     name="search"
-                    type="text"
                     onChange={props.handleInputChange}
+                    type="text"
                     placeholder="Enter a character...."
                     className="searchInput"
-
                 />
                 <br/>
                 <button className="searchBtn" onClick={props.handleSubmitForm}>Search</button>

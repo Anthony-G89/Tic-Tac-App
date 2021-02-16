@@ -22,9 +22,9 @@ class Pokemon extends Component {
 
   handleSubmitForm = event => {
     event.preventDefault();
-    this.searchPokemon(this.state.search);
+    this.starWarCharacterSearch(this.state.search);
     if (!this.state.search) {
-      alert("please enter a Pokemon");
+      alert("please enter a character");
       window.location.reload();
       this.setState({
         search: ""
@@ -32,9 +32,9 @@ class Pokemon extends Component {
     };
   };
 
-  searchPokemon = PokemonSearched => {
-    API.pokemonSearch(PokemonSearched)
-      .then(res => this.setState({ results: res.data.result[0].properties + console.log(res)}))
+  starWarCharacterSearch = starWarSearched => {
+    API.starWarCharacterSearch(starWarSearched)
+      .then(response => this.setState({ results: response.data.result[0].properties + console.log(response)}))
       .catch(err  => console.log(err));
 
   }

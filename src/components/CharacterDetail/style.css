@@ -8,6 +8,10 @@
     background: rgb(66,63,251);
     background: linear-gradient(90deg, rgba(66,63,251,1) 0%, rgba(1,2,10,1) 49%, rgba(11,45,166,1) 83%);
     height: 50vh;
+}
 
-    
+.details {
+    color: whitesmoke;
+    font-weight: 800;
+    margin: 10px;
 }

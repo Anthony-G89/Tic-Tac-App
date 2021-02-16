@@ -1,11 +1,15 @@
+import { Component } from 'react';
 import './App.css';
 
-function App() {
+class Pokemon extends Component{
+
+  render(){
   return (
-    <div className="App">
+    <div className="">
      
     </div>
   );
+  }
 }
 
-export default App;
+export default Pokemon;

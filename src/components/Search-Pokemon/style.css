@@ -1,4 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@600&display=swap');
+
 .searchForm {
     text-align: center;
     margin-top: 50px;
+}
+
+.searchBtn {
+    margin-top: 5px;
+    padding: 3px 30px;
+    border: none;
+    background-color: #3a397d;
+    color: whitesmoke;
+    font-size: 20px;
+} 
+
+.searchInput {
+    width: 37%;
+    text-align: center;
+}
+
+
+.labelText {
+    font-family: 'Arimo', sans-serif;
+    font-size: 2rem;
 }

@@ -34,10 +34,14 @@ class Pokemon extends Component {
 
   starWarCharacterSearch = starWarSearched => {
     API.starWarCharacterSearch(starWarSearched)
-      .then(response => this.setState({ results: response.data.result[0].properties + console.log(response)}))
+      .then(response => this.setState({ results: response.data.result[0].properties}))
       .catch(err  => console.log(err));
+     
 
-  }
+
+      }
+
+  
 
   render() {
     return (
@@ -49,7 +53,6 @@ class Pokemon extends Component {
         handleSubmitForm={this.handleSubmitForm} />
 
         <CharacterDetail
-        url={this.state.results.url}
         name={this.state.results.name}
          birthYear={this.state.results.birth_year}
          eyeColor={this.state.results.eye_color}

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@600&family=Reggae+One&display=swap');
+
 .container {
     display: flex;
     justify-content: center;
@@ -5,13 +7,19 @@
     flex-direction: column;
     position: relative;
     top: 10rem;
-    background: rgb(66,63,251);
-    background: linear-gradient(90deg, rgba(66,63,251,1) 0%, rgba(1,2,10,1) 49%, rgba(11,45,166,1) 83%);
-    height: 50vh;
+    /* background: rgb(66,63,251);
+    background: linear-gradient(90deg, rgba(66,63,251,1) 0%, rgba(1,2,10,1) 49%, rgba(11,45,166,1) 83%); */
+    background-image: url("../../images/death-star-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    border-radius: 15px;
 }
 
 .details {
-    color: whitesmoke;
+    color: black;
     font-weight: 800;
     margin: 10px;
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Reggae One', cursive;
 }

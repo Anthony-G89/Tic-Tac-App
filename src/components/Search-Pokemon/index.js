@@ -6,14 +6,15 @@ function searchForm(props) {
     return (
         <form className="searchForm">
             <div>
-                <label>Search for a Star Wars Characters:</label>
+                <label className="labelText">Search for a Star Wars Characters:</label>
                 <br/>
                 <input
                     value={props.value}
                     name="search"
                     type="text"
                     onChange={props.handleInputChange}
-                    placeholder="Enter a character"
+                    placeholder="Enter a character...."
+                    className="searchInput"
 
                 />
                 <br/>

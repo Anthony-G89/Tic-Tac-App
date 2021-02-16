@@ -4,17 +4,19 @@ import "./style.css";
 
 function searchForm(props) {
     return (
-        <form>
+        <form className="searchForm">
             <div>
-                <label>Search for a Pokemon:</label>
+                <label>Search for a Star Wars Characters:</label>
+                <br/>
                 <input
                     value={props.value}
                     name="search"
                     type="text"
                     onChange={props.handleInputChange}
-                    placeholder="Enter a Pokemon"
+                    placeholder="Enter a character"
 
                 />
+                <br/>
                 <button onClick={props.handleSubmitForm}>Search</button>
             </div>
         </form>

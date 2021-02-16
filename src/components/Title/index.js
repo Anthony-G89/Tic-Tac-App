@@ -1,10 +1,11 @@
 import React from "react";
+import "./style.css";
 
 
 function title(props) {
     return (
-        <div>
-            <h1 className="">{props.children}</h1>
+        <div className="jumbotron jumbotron-fluid">
+            <h1 className="star">{props.children}</h1>
         </div>
     )
 }

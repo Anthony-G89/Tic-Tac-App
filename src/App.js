@@ -34,7 +34,7 @@ class Pokemon extends Component {
 
   searchPokemon = PokemonSearched => {
     API.pokemonSearch(PokemonSearched)
-      .then(res => this.setState({ results: res.data.result[0].properties}))
+      .then(res => this.setState({ results: res.data.result[0].properties + console.log(res)}))
       .catch(err  => console.log(err));
 
   }
@@ -42,13 +42,14 @@ class Pokemon extends Component {
   render() {
     return (
       <div className="">
-        <Title>Information on Pokemon's</Title>
+        <Title>Star Wars</Title>
         <SearchPokemon
         vaule={this.state.search}
         handleInputChange={this.handleInputChange}
         handleSubmitForm={this.handleSubmitForm} />
 
         <CharacterDetail
+        url={this.state.results.url}
         name={this.state.results.name}
          birthYear={this.state.results.birth_year}
          eyeColor={this.state.results.eye_color}
